@@ -1,0 +1,26 @@
+
+.logo{
+    height: 40px;
+    width: 320px;
+    background-image: url(./GENTLE_MONSTER_Logo_New_2.svg);
+    background-size: cover;
+}
+.bar{
+    width: 1200px;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+
+}
+body{
+    font-family: 'Montserrat';
+}
+.bin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    padding: 1rem
+}
