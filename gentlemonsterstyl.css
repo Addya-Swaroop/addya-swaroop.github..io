@@ -6,7 +6,7 @@ body {
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     
     width: 100%;
     height: 85px;
@@ -91,4 +91,23 @@ body {
     filter: blur(60px);
     opacity: 0.35;
 }
-
+.model-slide{
+    display: flex;
+    overflow-x: auto;
+    
+}
+.model{
+    /* height: 610px; */
+    width: 50%;
+    /* width: auto; */
+}
+.model img{
+    /* height: 610px; */
+    size: 100px;
+    height: 900px;
+    width: auto;
+}
+.price-tag{
+    position: relative;
+    top: -100px;
+}
