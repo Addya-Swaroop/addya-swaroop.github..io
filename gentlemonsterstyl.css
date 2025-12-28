@@ -67,6 +67,7 @@ body {
     flex-direction: column;
     list-style: none;
     transform: translateY(-10px);
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     transition: 
         max-height 4s ease,
         opacity 3s ease,
@@ -74,12 +75,14 @@ body {
         transform 3s ease;
         
 }
+.drop .dd{
+    font-size: calc(13px - 0px);
+}
 
-
-.nav-left button {
+.nav-left .bb {
     margin-right: 30px;
     text-decoration: none;
-    font-weight:520;
+    font-size: calc(14px - 0px);
     border: 0px;
     background: none;
     
