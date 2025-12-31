@@ -322,10 +322,15 @@ footer ul li{
     display: inline;
     margin: 0 10px;
 }
-footer div{
+footer .copy{
     /* margin-left: 3.5294vw; */
     padding: 0 10px;
     font-weight:bold;
+}
+footer .credits{
+    padding: 0 10px;
+    text-shadow: 2px 2px 4px burlywood;
+    font-weight:bold;    
 }
 @media(max-width:768px){
     .navbar{
