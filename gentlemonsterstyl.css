@@ -170,6 +170,7 @@ transition: max-height 1.8s cubic-bezier(.12,.85,.25,1);    justify-content: spa
     font-family: "Times New Roman", Times, serif;
     color: white;
     font-size: 1.59rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 4px;
     margin-bottom: 3rem;
     font-weight: 400;
