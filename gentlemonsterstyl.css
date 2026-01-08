@@ -42,7 +42,6 @@ transition: max-height 1.8s cubic-bezier(.12,.85,.25,1);    justify-content: spa
     padding-top: 28px ;
 }
 
-
 .drop .dd {
     width: 100%;
     text-align: left;
@@ -164,7 +163,7 @@ transition: max-height 1.8s cubic-bezier(.12,.85,.25,1);    justify-content: spa
     transform: translate(-50%, -50%); /* Keeps it perfectly centered */
     width: 100%;
     text-align: center;
-    z-index: 5;         /* Ensures it stays above the image */
+    z-index: 1;         /* Ensures it stays above the image */
 }
 .title {
     font-family: "Times New Roman", Times, serif;
