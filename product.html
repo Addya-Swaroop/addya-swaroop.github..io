@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product</title>
+
+<link rel="stylesheet" href="./gentlemonsterstyl.css">
+
+<style>
+.product-page{
+    margin-top:120px;
+    padding:40px;
+    display:flex;
+    gap:60px;
+    align-items:center;
+    justify-content:center;
+}
+
+.product-page img{
+    width:500px;
+    max-width:100%;
+    box-shadow:-2px 0 20px rgba(152, 34, 1, 0.15);}
+
+.product-info{
+    max-width:400px;
+}
+
+.product-info h1{
+    font-size:38px;
+}
+
+.product-info button{
+    width:220px;
+    padding:15px;
+    margin-top:15px;
+    cursor:pointer;
+}
+button{
+    background-color: rgb(216, 208, 203);
+}
+</style>
+</head>
+
+<body>
+
+<div class="product-page">
+
+<img id="productImage">
+
+<div class="product-info">
+
+<h1 id="productName"></h1>
+
+<h2 id="productPrice"></h2>
+
+<p>
+Premium eyewear from the Gentle Monster collection.
+</p>
+
+<button id="addCartBtn">
+ADD TO CART
+</button>
+
+<br>
+
+<a href="index.html">
+<button>
+BACK TO HOME
+</button>
+</a>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
