@@ -25,20 +25,11 @@ transition: max-height 1.8s cubic-bezier(.12,.85,.25,1);    justify-content: spa
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px); 
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
 }
-/* .navbar:hover {
-    height: 50vh;
-    overflow: visible;
-    background: rgba(255, 255, 255, 0.2); 
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px); 
-    align-items: flex-start;
-}    */
+
 .navbar:has(.part:hover) {
     height:41vh;
-    /* align-items: start; */
-    /* align-items: flex-start; */
+   
     padding-top: 28px ;
 }
 
@@ -58,7 +49,6 @@ transition: max-height 1.8s cubic-bezier(.12,.85,.25,1);    justify-content: spa
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center;  */
     justify-content: space-between;
     
 }
@@ -73,7 +63,6 @@ transition: max-height 1.8s cubic-bezier(.12,.85,.25,1);    justify-content: spa
     margin-top: -1vh;
     margin-left: -1vh;
     left: 0;
-    /* background: none; */
     opacity: 0;
     visibility: hidden;
     transform: translateY(8px);
@@ -91,7 +80,6 @@ transition: max-height 1.8s cubic-bezier(.12,.85,.25,1);    justify-content: spa
     display: flex;
     flex-direction: column;
     list-style: none;
-    /* transform: translateY(-10px); */
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     transition: 
         max-height 4s ease,
@@ -132,15 +120,7 @@ transition: max-height 1.8s cubic-bezier(.12,.85,.25,1);    justify-content: spa
 
 /* CENTER LOGO */
 .nav-center {
-    /* height: 9px;
-    width: 20px;
     
-    background-image: url(./GENTLE_MONSTER_Logo_New_2.svg);
-    background-size: cover;
-    height: 6.82vh;
-    width: 25%;
-    letter-spacing: 2px;
-    font-weight: 600; */
 }
 
 /* RIGHT SIDE TEXT & ICONS */
@@ -163,13 +143,13 @@ transition: max-height 1.8s cubic-bezier(.12,.85,.25,1);    justify-content: spa
     cursor: pointer;
 }
 .content-container {
-    position: absolute; /* This pulls it out of the layout flow */
-    top: 60vh;         /* Adjust this number to move it up or down on the image */
+    position: absolute; 
+    top: 60vh;         
     left: 50%;
-    transform: translate(-50%, -50%); /* Keeps it perfectly centered */
+    transform: translate(-50%, -50%); 
     width: 100%;
     text-align: center;
-    z-index: 1;         /* Ensures it stays above the image */
+    z-index: 1;        
 }
 .title {
     font-family: "Times New Roman", Times, serif;
@@ -193,7 +173,7 @@ transition: max-height 1.8s cubic-bezier(.12,.85,.25,1);    justify-content: spa
     border: 1px solid white;
     border-radius: 50px;
     font-size: 14px;
-    background: rgba(0, 0, 0, 0.2); /* Slight dark tint for readability */
+    background: rgba(0, 0, 0, 0.2); 
     transition: 0.3s;
 }
 /* BLUR EFFECTS */
@@ -227,15 +207,10 @@ transition: max-height 1.8s cubic-bezier(.12,.85,.25,1);    justify-content: spa
     
 }
 .model{
-    /* height: 610px; */
     width: 50%;
-    /* width: auto; */
 }
 .model img{
-    /* height: 610px; */
-    /* size: 400px; */
-    
-    height: 105vh;
+      height: 105vh;
     width: auto;
 }
 .price-tag{
@@ -250,12 +225,7 @@ transition: max-height 1.8s cubic-bezier(.12,.85,.25,1);    justify-content: spa
 .name,.amt{
     text-decoration: none;
 }
-/* .specs-slide{
-    display: flex;
-    
-    overflow-x: auto;
 
-} */
  .slide2{
     margin: 3.5294vw;
  }
@@ -297,7 +267,6 @@ transition: max-height 1.8s cubic-bezier(.12,.85,.25,1);    justify-content: spa
     background: none;
 }
 .amtg{
-    /* text-decoration-color: lightgray; */
     color: rgb(94, 94, 94);
 }
 .opt{
@@ -311,7 +280,6 @@ footer{
     margin: 3.5294vw;
     font-size: small;
     width: auto;
-    /* position: fixed; */
     bottom: 0;
     left: 0;
 }
@@ -328,7 +296,6 @@ footer ul li{
     margin: 0 10px;
 }
 footer .copy{
-    /* margin-left: 3.5294vw; */
     padding: 0 10px;
     font-weight:bold;
 }
@@ -342,7 +309,6 @@ footer .credits{
     position: fixed;
     z-index: 2;
     width: 100%;
-    /* height: 85px; */
     height: 3.5vh;
     display:flex   ;
     flex-direction: row;
@@ -354,7 +320,6 @@ footer .credits{
     }
     .navlefts, .navrights{
         display: flex;
-        /* align-items:self-start; */
     }
     .navlefts a, .navrights a{
                 color: black;
@@ -363,7 +328,6 @@ footer .credits{
         margin-top: 1vh;
         display: flex;
         position: fixed;
-        /* top: 5vh; */
         flex-direction: column;
     }
     .lines{
@@ -372,7 +336,6 @@ footer .credits{
     .menu{
         display: none;
         position: absolute;
-        /* top: 95%; */
         top: 2vh;
         font-size:large;
         left: -2.3vh;
@@ -395,7 +358,6 @@ footer .credits{
     .navbar:has(.burger:hover) {
     height:30vh;
     align-items: start;
-    /* align-items: flex-start; */
     padding-top: 28px ;
     
 }
@@ -413,7 +375,6 @@ footer .credits{
         display: none;
     }
     .nav-center svg{
-        /* height: 100%; */
         width: 70%;
     }
     .blur-left,
@@ -430,7 +391,6 @@ footer .credits{
     .bgvideo img {
         height: 85vh;
         object-fit: cover;
-        /* transform: scale( */
     }
     .model-slide{
         display: flex;
@@ -450,7 +410,6 @@ footer .credits{
         flex-shrink: 0;
         display: flex;
         flex-direction: column;
-        /* align-items: flex-start; */
     }
     .model img{
         height: 50vh;
@@ -465,7 +424,6 @@ footer .credits{
         position: relative;
         top: 20px;
         bottom: 20px;
-        /* left: 20px; */
         margin: 0;
         font-size: 12px;
         padding: 5px 10px;
@@ -489,7 +447,6 @@ footer .credits{
     width: 50%;
     height: 100%;
     margin: 3.5294vw;
-    /* width: 370px;     */
 
 }
 .specs img{
@@ -508,7 +465,6 @@ footer .credits{
     background: none;
 }
 .amtg{
-    /* text-decoration-color: lightgray; */
     color: rgb(94, 94, 94);
 }
 .opt{
