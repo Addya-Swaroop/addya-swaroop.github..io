@@ -14,9 +14,24 @@ const products = {
     fata:{name:"Fata 01(bl)",price:32300,image:"./images/image copy 5g.png"},
     alto:{name:"Alto GC9",price:32300,image:"./images/image copy 11g.png"}
 };
-
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+cart.forEach(item => {
+
+    if(!item.quantity){
+
+        item.quantity = 1;
+
+    }
+
+});
+function removeItem(index){
+
+    cart.splice(index,1);
+
+    updateCart();
+
+}
 function updateCart(){
     localStorage.setItem("cart",JSON.stringify(cart));
 
@@ -34,26 +49,67 @@ function updateCart(){
 
         cart.forEach((item,index)=>{
 
-            sum+=item.price;
+    sum += item.price * item.quantity;
 
-            items.innerHTML+=`
-            <div class="cart-item">
-                <h4>${item.name}</h4>
-                <p>₹${item.price}</p>
-                <button onclick="removeItem(${index})">
-                Remove
-                </button>
+    items.innerHTML += `
+    <div class="cart-item">
+
+        <img src="${item.image}" class="cart-thumb">
+
+        <div class="cart-details">
+
+            <h4>${item.name}</h4>
+
+            <p>₹${item.price}</p>
+
+            <div class="qty-controls">
+
+                <button onclick="decreaseQty(${index})">−</button>
+
+                <span>${item.quantity}</span>
+
+                <button onclick="increaseQty(${index})">+</button>
+
             </div>
-            `;
-        });
+
+            <button class="remove-btn"
+            onclick="removeItem(${index})">
+            Remove
+            </button>
+
+        </div>
+
+    </div>
+    `;
+});
 
         total.innerText=`Total: ₹${sum}`;
     }
 }
 
-function removeItem(index){
-    cart.splice(index,1);
+function increaseQty(index){
+
+    cart[index].quantity++;
+
     updateCart();
+
+}
+
+function decreaseQty(index){
+
+    if(cart[index].quantity > 1){
+
+        cart[index].quantity--;
+
+    }
+    else{
+
+        cart.splice(index,1);
+
+    }
+
+    updateCart();
+
 }
 
 updateCart();
@@ -125,7 +181,19 @@ if(id && document.getElementById("productName")){
     document.getElementById("addCartBtn")
     .addEventListener("click",()=>{
 
-        cart.push(product);
+        const existing = cart.find(
+item => item.name === product.name
+);
+
+if(existing){
+    existing.quantity++;
+}
+else{
+    cart.push({
+        ...product,
+        quantity:1
+    });
+}
 
         updateCart();
 
@@ -154,3 +222,25 @@ document.querySelectorAll(".cartBtn").forEach(btn => {
     });
 
 });
+const checkoutBtn =
+document.getElementById("checkoutBtn");
+
+if(checkoutBtn){
+
+    checkoutBtn.addEventListener("click",()=>{
+
+        if(cart.length === 0){
+
+            alert("Your cart is empty");
+
+            return;
+        }
+
+        alert("Proceeding to checkout");
+
+        // future page
+        // window.location.href="checkout.html";
+
+    });
+
+}

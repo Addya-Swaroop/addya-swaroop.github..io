@@ -541,7 +541,9 @@ footer .credits{
     right:-420px;
     width:400px;
     height:100vh;
-    background:white;
+    
+        background: #F3F4F6;
+
     z-index:9999;
     transition:.4s;
     box-shadow:-2px 0 20px rgba(0,0,0,.15);
@@ -612,4 +614,64 @@ footer .credits{
     background:none;
     padding:auto
     ;
+}
+.cart-item{
+    display:flex;
+    gap:15px;
+    padding:15px 0;
+    border-bottom:1px solid #eee;
+}
+
+.cart-thumb{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+}
+
+.cart-details{
+    flex:1;
+}
+
+.qty-controls{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:10px;
+}
+
+.qty-controls button{
+    width:30px;
+    height:30px;
+    border:none;
+    background:black;
+    color:white;
+    cursor:pointer;
+}
+
+.remove-btn{
+    margin-top:10px;
+    border:none;
+    background:#e6e6e6;
+    padding:8px 12px;
+    cursor:pointer;
+}
+.cart-footer{
+    margin-top:20px;
+    padding-top:15px;
+    border-top:1px solid #ddd;
+}
+
+#checkoutBtn{
+    width:100%;
+    padding:14px;
+    background:black;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:15px;
+    letter-spacing:1px;
+}
+
+#checkoutBtn:hover{
+    opacity:0.9;
 }
