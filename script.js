@@ -1,18 +1,19 @@
 const products = {
-    monica:{name:"Monica R11",price:25300,image:"./images/image copy.png"},
-    moody:{name:"Moody",price:25300,image:"./images/image copy 2.png"},
-    lime:{name:"Lime 02(br)",price:25300,image:"./images/image copy 3.png"},
-    heavnly:{name:"Heavnly R02",price:25300,image:"./images/image copy 4.png"},
-    kafka:{name:"Kafka 01",price:32300,image:"./images/image copy 10g.png"},
-    brutal:{name:"Brutal 01",price:32300,image:"./images/image copy 9g.png"},
-    fuse:{name:"Fuse MGR1",price:32300,image:"./images/image copy 7g.png"},
-    mosh:{name:"Mosh 02",price:32300,image:"./images/image copy 8g.png"},
-    goxx:{name:"Goxx 03",price:32300,image:"./images/image copy 15g.png"},
-    paranoyd:{name:"paranoyd 03(cm)",price:32300,image:"./images/image copy 14g.png"},
-    eden:{name:"Eden 02(br)",price:32300,image:"./images/image copy 13g.png"},
-    riff:{name:"Riff 037",price:32300,image:"./images/image copy 12g.png"},
-    fata:{name:"Fata 01(bl)",price:32300,image:"./images/image copy 5g.png"},
-    alto:{name:"Alto GC9",price:32300,image:"./images/image copy 11g.png"}
+  monica:{name:"Monica R11",price:51300,image:"./images/image copy.png"},
+moody:{name:"Moody",price:45300,image:"./images/image copy 2.png"},
+lime:{name:"Lime 02(br)",price:35300,image:"./images/image copy 3.png"},
+heavnly:{name:"Heavnly R02",price:42300,image:"./images/image copy 4.png"},
+kafka:{name:"Kafka 01",price:16300,image:"./images/image copy 10g.png"},
+brutal:{name:"Brutal 01",price:32100,image:"./images/image copy 9g.png"},
+fuse:{name:"Fuse MGR1",price:23300,image:"./images/image copy 7g.png"},
+mosh:{name:"Mosh 02",price:42300,image:"./images/image copy 8g.png"},
+goxx:{name:"Goxx 03",price:45300,image:"./images/image copy 15g.png"},
+paranoyd:{name:"paranoyd 03(cm)",price:38300,image:"./images/image copy 14g.png"},
+eden:{name:"Eden 02(br)",price:51300,image:"./images/image copy 13g.png"},
+riff:{name:"Riff 037",price:42300,image:"./images/image copy 12g.png"},
+fata:{name:"Fata 01(bl)",price:38300,image:"./images/image copy 5g.png"},
+alto:{name:"Alto GC9",price:47300,image:"./images/image copy 11g.png"}
+
 };
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
